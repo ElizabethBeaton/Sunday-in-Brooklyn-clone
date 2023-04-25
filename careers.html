@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-navbar">
+      <div class="site-logo">
+        <a href="index.html">
+          <img src="image/siblogo.png" alt="" />
+        </a>
+      </div>
+      <nav class="site-nav">
+        <ul class="site-nav-menu">
+          <li><a style="text-decoration: none" href="menu.html">menus</a></li>
+          <li><a style="text-decoration: none" href="about.html">about</a></li>
+          <li>
+            <a style="text-decoration: none" href="privatedining.html"
+              >private dining & events</a
+            >
+          </li>
+          <li><a style="text-decoration: none" href="press.html">press</a></li>
+          <li>
+            <a style="text-decoration: none" href="careers.html">careers</a>
+          </li>
+          <li>
+            <a style="text-decoration: none" href="reservations.html"
+              >reservations</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="container-sm-careers">
+      <h1>Work with us</h1>
+      <p>
+        We’d love to have you join our team! Please use the form below to apply.
+      </p>
+      <p>
+        Feel free to send in your CV even if you don't see the position you're
+        looking for listed.
+      </p>
+    </section>
+    <section class="container-sm-careers-form">
+      <div class="careers-form">
+        <form
+          action="resultscareers.html"
+          method="GET"
+          enctype="multipart/form-data"
+        >
+          <div>
+            <label for="name">Name</label>
+            <span class="required">- Required</span>
+            <input
+              class="control"
+              type="text"
+              name="name"
+              id="name"
+              value="Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <span class="required">- Required</span>
+            <input
+              class="control"
+              type="email"
+              name="email"
+              id="email"
+              value="Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <span class="required">- Required</span>
+            <input
+              class="control"
+              type="tel"
+              name="phone"
+              id="phone"
+              value="Phone Number"
+            />
+          </div>
+          <div>
+            <label for="bio">Tell us a little about you</label>
+            <span class="required">- Required</span>
+            <textarea
+              class="control"
+              id="bio"
+              name="bio"
+              rows="9"
+              cols="110"
+              placeholder="Tell us a little about you"
+            ></textarea>
+          </div>
+          <div>
+            <label class="input-file" for="file">Upload CV</label>
+            <span class="required">- Required</span>
+            <div class="file-input">
+              <input type="file" typle="file" name="file" />
+            </div>
+          </div>
+          <button class="btn" type="submit">Apply</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
