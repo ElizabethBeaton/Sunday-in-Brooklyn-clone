@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="reservations-page">
+      <section class="container-sm-reservations">
+        <h2 class="reservations-heading">Reservations</h2>
+      </section>
+      <section class="container-sm-reservations-form">
+        <div class="reservations-form">
+          <form action="resultscareers.html" method="GET">
+            <div>
+              <label for="people">number of people</label>
+              <span class="required"> - Optional</span>
+              <input
+                class="control"
+                type="number"
+                id="people"
+                name="people"
+                min="1 person"
+                max="8 +"
+                placeholder="Number of People"
+                required
+              />
+            </div>
+            <div>
+              <label for="date">date</label>
+              <span class="required">- Required</span>
+              <input
+                class="control"
+                type="date"
+                name="date"
+                id="date"
+                min="2022-02-10"
+                placeholder="date"
+                required
+              />
+            </div>
+            <div>
+              <label form="time">time</label>
+              <span class="required">- Optional</span>
+              <input
+                class="control"
+                type="time"
+                id="time"
+                name="time"
+                min="7:00am"
+                max="11:30pm"
+                placeholder="time"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="apply">
+          <button class="btn-book">find a table</button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
