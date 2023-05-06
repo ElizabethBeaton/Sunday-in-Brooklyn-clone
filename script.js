@@ -1,12 +1,14 @@
-const navbar = document.getElementById("main-navbar");
-const menu = document.getElementById("main-menu");
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.querySelector(".navbar-links");
 
-window.onscroll = function () {
-  if (window.pageYOffset >= menu.offsetTop) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-};
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
 
+/*
+const toggleButtonBars = document.querySelector(".toggle-button");
 
+toggleButtonBars.addEventListener("click", () => {
+  toggleButtonBars.classList.toggle("active");
+});
+*/
