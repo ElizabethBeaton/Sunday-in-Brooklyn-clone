@@ -11,36 +11,51 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="container-navbar">
-      <div class="site-logo">
+      <div class="site-logo brand-title" id="main-navbar">
         <a href="index.html">
           <img src="image/siblogo.png" alt="" />
         </a>
+        <a href="#" class="toggle-button">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </a>
+        <div class="site-nav">
+          <ul class="site-nav-menu navbar-links">
+            <li><a style="text-decoration: none" href="menu.html">menus</a></li>
+            <li>
+              <a style="text-decoration: none" href="about.html">about</a>
+            </li>
+            <li>
+              <a style="text-decoration: none" href="privatedining.html"
+                >private dining & events</a
+              >
+            </li>
+            <li>
+              <a style="text-decoration: none" href="press.html">press</a>
+            </li>
+            <li>
+              <a style="text-decoration: none" href="careers.html">careers</a>
+            </li>
+            <li>
+              <a style="text-decoration: none" href="reservations.html"
+                >reservations</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav class="site-nav">
-        <ul class="site-nav-menu">
-          <li><a style="text-decoration: none" href="menu.html">menus</a></li>
-          <li><a style="text-decoration: none" href="about.html">about</a></li>
-          <li>
-            <a style="text-decoration: none" href="privatedining.html"
-              >private dining & events</a
-            >
-          </li>
-          <li><a style="text-decoration: none" href="press.html">press</a></li>
-          <li>
-            <a style="text-decoration: none" href="careers.html">careers</a>
-          </li>
-          <li>
-            <a style="text-decoration: none" href="reservations.html"
-              >reservations</a
-            >
-          </li>
-        </ul>
-      </nav>
     </div>
     <section class="container-gallery">
       <div class="slider-wrapper">
@@ -78,7 +93,7 @@
       <h1>menus</h1>
     </section>
     <section id="menus">
-      <div>
+      <nav class="site-nav">
         <ul class="diner-nav">
           <li><a style="text-decoration: none" href="menu.html">brunch</a></li>
           <li>
@@ -100,7 +115,7 @@
             >
           </li>
         </ul>
-      </div>
+      </nav>
       <div class="diner-container">
         <section id="cocktails">
           <div class="container-sm-home">
@@ -142,7 +157,7 @@
                   </p>
                 </li>
                 <li class="menu-item">
-                  kyoto yacht club
+                  kyoto yacht club / 13
                   <p>
                     Japanese Gin, Bergamot Rosolio, Pomegranate, Lemon, Cava,
                     Cucumber
@@ -187,6 +202,26 @@
         </section>
       </div>
     </section>
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/sundayinbrooklynldn/?locale=en_GB"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/sundayinbrooklyn_ldn/?hl=en"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://open.spotify.com/user/sundayinbrooklyn"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+      </div>
+      <div class="footer-p">
+        <p>98 westborne grove, london w2 5ru</p>
+        <p>privacy policy</p>
+      </div>
+      <div class="footer-btn">
+        <a href="emailsignup.html"><button>Email Signup</button></a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

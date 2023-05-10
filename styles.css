@@ -88,25 +88,6 @@
   color: #42965f;
 }
 /*
-.btn-reservations,
-.btn-menus {
-  width: 100%;
-  margin: 2rem;
-  display: block;
-  height: 60px;
-  font-size: 15px;
-  background-color: #42965f;
-  color: white;
-  border: 2px solid transparent;
-  text-transform: uppercase;
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 12px;
-}
-.btn-menus {
-  width: 90px;
-  margin: auto;
-}*/
 
 .btn-container p {
   padding-top: 42px;
@@ -130,13 +111,7 @@
   z-index: 1100;
 }
 /*FIRST NAVBAR*/
-/*
-nav {
-  justify-content: space-between;
-  padding-top: 20px;
-  align-items: center;
-  text-decoration: none;
-}*/
+
 .site-nav {
   width: 100%;
   text-align: center;
@@ -394,14 +369,14 @@ h4 {
   width: auto;
   margin: 30px;
   color: #fff;
+  font-size: 11px;
   background-color: #42965f;
-  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 4px 18px;
-  border-radius: 3px;
+  padding: 8px 14px;
+  border-radius: 2px;
   transition: transform 0.4s;
   cursor: pointer;
 }
@@ -424,7 +399,6 @@ h4 {
   font-size: 16px;
   font-weight: bold;
 }
-.btn-apply 
 /* PRESS PAGE */
 .intro-press h1 {
   font-size: 2rem;
@@ -441,9 +415,6 @@ h4 {
   background-image: url("https://getbento.imgix.net/accounts/0f4fdd657ea0df34045635c5299520d0/media/images/18868pressbackground.png?w=1800&fit=max&auto=compress,format&h=1800");
   background-size: 110%;
   background-repeat: no-repeat;
-
-  /*grid-auto-rows: minmax(100px, auto);*/
-  /*grid-template-rows: repeat(3, 1fr);*/
 }
 
 .itemm {
@@ -479,9 +450,6 @@ h4 {
   height: 70%;
   object-fit: cover;
   border: 2px solid #42965f;
-  /*
-  width: 300px;
-  height: 200px;*/
 }
 .itemm img:hover {
   transform: scale(1.1);
@@ -524,14 +492,15 @@ h4 {
 .btn-book {
   width: auto;
   margin: 30px;
+  font-size: 11px;
   color: #fff;
   background-color: #000;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 3px;
+  padding: 8px 14px;
+  border-radius: 2px;
   transition: transform 0.4s;
   cursor: pointer;
 }
@@ -552,7 +521,6 @@ footer {
 footer .social {
   display: flex;
 }
-
 .social a {
   width: 40px;
   height: 40px;
@@ -605,11 +573,13 @@ footer button:hover {
   margin-top: 200px;
   padding: 0 50px;
 }
-.btn-submit {
+.btn-submit,
+.btn-book {
   color: #fff;
   background-color: #000;
 }
-.btn-submit:hover {
+.btn-submit:hover,
+.btn-book:hover {
   color: #fff;
   background-color: #a7d6f0;
 }
@@ -640,54 +610,6 @@ footer button:hover {
 #main-navbar.sticky .site-logo {
   transition: 0.4s;
 }
-/*
-.checkbtn {
-  color: #a7d6f0;
-  font-size: 30px;
-  float: right;
-  line-height: px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check {
-  display: none;
-}
-
-@media (max-width: 700px) {
-  .checkbtn {
-    display: block;
-  }
-  .site-nav-menu {
-    display: none;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    top: 15%;
-    left: 0%;
-    text-align: center;
-  }
-  .site-nav-menu li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  .site-nav-menu li a {
-    font-size: 20px;
-  }
-  .site-nav-menu li a:hover,
-  .site-nav-menu li a.active {
-    columns: #0082e6;
-  }
-  #check:checked ~ .site-nav-menu li {
-    left: 0;
-  }
-  .site-logo img {
-    margin-top: 0;
-  }
-}
-*/
 .toggle-button {
   position: absolute;
   top: 0.75rem;
@@ -698,7 +620,6 @@ footer button:hover {
   width: 31px;
   height: 21px;
 }
-
 .toggle-button .bar {
   height: 3px;
   width: 100%;
@@ -706,46 +627,24 @@ footer button:hover {
   border-radius: 10px;
   transition: all 0.3 ease;
 }
-
 .toggle-button span:nth-child(1) {
   transform-origin: top left;
 }
-
 .toggle-button span:nth-child(2) {
   transform-origin: center;
 }
 .toggle-button span:nth-child(3) {
   transform-origin: bottom left;
 }
-
 .toggle-button.active span:nth-child(1) {
   transform: translate(45deg) translate(4px, 4px);
 }
-
 .toggle-button.active span:nth-child(2) {
   transform: scale(0);
 }
-
 .toggle-button.active span:nth-child(3) {
   transform: translate(45deg) translate(4px, -9px);
 }
-
-/*
-.toggle-button .bar-1 {
-  transform: translateY(-50px, -50px);
-}
-.toggle-button .bar-3 {
-  transform: translateX(-50px, 40px);
-}
-.openmenu .bar-1 {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-.openmenu .bar-3 {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-.openmenu .bar-2 {
-  width: 0;
-}*/
 @media (max-width: 990px) {
   .press-container {
     max-width: 1300px;
@@ -759,32 +658,12 @@ footer button:hover {
   }
   .container-sm p {
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     padding: 30px;
     line-height: 1.8;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .btn-submit,
-  .btn-apply,
-  .btn-book {
-    width: 70%;
-    position: absolute;
-    right: 0;
-    margin: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 3px 18px;
-    border-radius: 3px;
-    transition: transform 0.4s;
-    cursor: pointer;
   }
   footer {
     position: relative;
@@ -841,7 +720,6 @@ footer button:hover {
     margin: 8px;
   }
 }
-
 @media (max-width: 765px) {
   .toggle-button {
     display: flex;
@@ -870,6 +748,9 @@ footer button:hover {
     margin: 20px;
     display: block;
   }
+  .container-sm p {
+    max-width: 880px;
+  }
   .press-container {
     max-width: 500px;
     margin: 0 auto;
@@ -880,9 +761,29 @@ footer button:hover {
     object-fit: cover;
     width: 60vh;
     height: 70%;
-    object-fit: cover;
   }
-  .container-sm p {
-    max-width: 880px;
+  .itemm .grid-subheading {
+    margin: 20px;
+    padding: 10px;
+  }
+  .btn-submit,
+  .btn-apply,
+  .btn-book {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    margin: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 3px 18px;
+    border-radius: 3px;
+    transition: transform 0.4s;
+    cursor: pointer;
   }
 }
