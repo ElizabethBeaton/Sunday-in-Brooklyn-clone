@@ -145,7 +145,7 @@
 }
 /*GALLERY*/
 .container-gallery {
-  padding: 2rem;
+  padding: 1rem;
 }
 .slider-wrapper {
   position: relative;
@@ -462,7 +462,7 @@ h4 {
   max-width: 100%;
 }
 .reservations-page {
-  padding: 30px;
+  padding: 40px;
   line-height: 1.8;
   display: block;
   max-width: 100%;
@@ -655,16 +655,24 @@ footer button:hover {
   .press-container-bg {
     background-image: url("https://getbento.imgix.net/accounts/0f4fdd657ea0df34045635c5299520d0/media/images/18868pressbackground.png?w=1800&fit=max&auto=compress,format&h=1800");
     background-size: 110%;
-  }
+  } /*
   .container-sm p {
     font-size: 18px;
-    text-align: center;
     padding: 30px;
     line-height: 1.8;
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
+  .container-sm p {
+  font-size: 11px;
+  padding: 30px;
+  line-height: 1.8;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
   footer {
     position: relative;
     width: 100%;
@@ -759,7 +767,7 @@ footer button:hover {
   }
   .itemm img {
     object-fit: cover;
-    width: 60vh;
+    width: 55vh;
     height: 70%;
   }
   .itemm .grid-subheading {
