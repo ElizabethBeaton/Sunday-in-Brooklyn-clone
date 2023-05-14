@@ -89,11 +89,6 @@
 }
 /*
 
-.btn-container p {
-  padding-top: 42px;
-  line-height: 36px;
-  text-align: center;
-}
 /* main PAGE CSS*/
 
 /*LOGO */
@@ -647,33 +642,16 @@ footer button:hover {
 }
 @media (max-width: 990px) {
   .press-container {
-    max-width: 850px;
     margin: 10px auto;
-    padding: 60px;
+    padding: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .press-container-bg {
     background-image: url("https://getbento.imgix.net/accounts/0f4fdd657ea0df34045635c5299520d0/media/images/18868pressbackground.png?w=1800&fit=max&auto=compress,format&h=1800");
     background-size: 110%;
-  } /*
-  .container-sm p {
-    font-size: 18px;
-    padding: 30px;
-    line-height: 1.8;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
   }
-  .container-sm p {
-  font-size: 11px;
-  padding: 30px;
-  line-height: 1.8;
-  max-width: 880px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
+
   footer {
     position: relative;
     width: 100%;
@@ -783,7 +761,7 @@ footer button:hover {
 }
 @media (max-width: 480px) {
   .press-container {
-    max-width: 470px;
+    max-width: 400px;
     margin: 0 auto;
     display: block;
   }
@@ -797,8 +775,8 @@ footer button:hover {
   }
   .itemm img {
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
   .itemm .grid-subheading {
     margin: 30px;
